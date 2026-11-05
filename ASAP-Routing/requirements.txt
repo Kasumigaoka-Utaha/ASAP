@@ -1,0 +1,4 @@
+# Install the PyTorch build appropriate for your CPU/CUDA platform first.
+torch>=1.12
+numpy
+PyYAML

@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use ASAP, please cite the paper below."
+title: "ASAP: Exploiting the Satisficing Generalization Edge in Neural Combinatorial Optimization"
+type: software
+authors:
+  - family-names: Fang
+    given-names: Han
+  - family-names: Weng
+    given-names: Paul
+  - family-names: Ban
+    given-names: Yutong
+url: "https://proceedings.mlr.press/v306/fang26t.html"
+preferred-citation:
+  type: conference-paper
+  title: "ASAP: Exploiting the Satisficing Generalization Edge in Neural Combinatorial Optimization"
+  authors:
+    - family-names: Fang
+      given-names: Han
+    - family-names: Weng
+      given-names: Paul
+    - family-names: Ban
+      given-names: Yutong
+  year: 2026
+  conference:
+    name: "43rd International Conference on Machine Learning"
+  collection-title: "Proceedings of Machine Learning Research"
+  volume: "306"
+  start: "29417"
+  end: "29446"
+  url: "https://proceedings.mlr.press/v306/fang26t.html"

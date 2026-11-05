@@ -1,0 +1,36 @@
+problem: cvrp
+stage: proposal  # proposal, selection, or alternating
+bsz: 64
+nb_nodes: 50
+capacity: 50
+dim_input_nodes: 2
+dim_emb: 128
+dim_ff: 512
+nb_heads: 8
+nb_layers_action_encoder: 2
+nb_layers_state_encoder: 2
+nb_layers_decoder: 3
+use_stage1_action_encoding: True
+
+# Optimization
+proposal_lr: 1e-4
+selection_lr: 1e-4
+proposal_epochs: 50
+selection_epochs: 50
+nb_epochs_alt: 50
+nb_batch_per_epoch: 300
+nb_batch_eval: 20
+k_promising: 8
+gamma: 0.99
+
+# Data / IO
+aug: mix
+aug_num: 8
+test_aug_num: 16
+data_path: ./data/
+save_dir: ./checkpoints/cvrp_asap
+
+# Checkpoints
+proposal_ckpt: ""        # required for selection training; proposal is frozen
+proposal_init_ckpt: ""   # optional warm start for proposal
+selection_init_ckpt: ""   # optional warm start for selection

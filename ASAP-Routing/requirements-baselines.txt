@@ -1,0 +1,4 @@
+# Optional solvers for reference tours/optimality gaps.
+elkai
+gurobipy
+hygese

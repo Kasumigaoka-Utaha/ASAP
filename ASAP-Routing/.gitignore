@@ -1,0 +1,7 @@
+*.stderr
+*.stdout
+data/
+ckpt/
+dataset/
+images/
+swanlog/

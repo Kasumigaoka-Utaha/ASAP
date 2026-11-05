@@ -1,0 +1,26 @@
+problem: tsp
+stage: proposal
+bsz: 64
+nb_nodes: 100
+dim_input_nodes: 2
+dim_emb: 128
+dim_ff: 512
+nb_heads: 8
+nb_layers_action_encoder: 2
+nb_layers_state_encoder: 2
+nb_layers_decoder: 3
+
+# Optimization
+model_lr_pretrain: 1e-4
+nb_epochs_pretrain: 400
+nb_batch_per_epoch: 300
+nb_batch_eval: 20
+
+
+# Data / IO
+aug: mix
+aug_num: 8
+test_aug_num: 16
+data_path: ./data/
+save_dir: ./checkpoints/tsp_pretrain
+
